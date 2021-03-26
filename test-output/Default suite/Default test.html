@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 01 10:58:10 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12864 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='_5DInstitut.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: _5DInstitut.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Flow-1 : Generate Line Item From BoQ", "UAT Test - Generate Line Item From BoQ"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 17 undefined steps
+The step &quot;Selecting the a company and access role&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Selecting the a company and access role&quot;)
+public void selecting_the_a_company_and_access_role() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the Project Management Module&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the Project Management Module&quot;)
+public void open_the_Project_Management_Module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the BoQ module&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the BoQ module&quot;)
+public void open_the_BoQ_module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Refesh the page to load the projects&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Refesh the page to load the projects&quot;)
+public void refesh_the_page_to_load_the_projects() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Select the Wizard from sidebar&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Select the Wizard from sidebar&quot;)
+public void select_the_Wizard_from_sidebar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Click on Create and Import multiple BoQs&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Click on Create and Import multiple BoQs&quot;)
+public void click_on_Create_and_Import_multiple_BoQs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Choose multiple BoQs form the Computer and Import&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Choose multiple BoQs form the Computer and Import&quot;)
+public void choose_multiple_BoQs_form_the_Computer_and_Import() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Marked Assignment Mode against every GAEB Name and submit&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Marked Assignment Mode against every GAEB Name and submit&quot;)
+public void marked_Assignment_Mode_against_every_GAEB_Name_and_submit() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Confirm the GAEB Import&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Confirm the GAEB Import&quot;)
+public void confirm_the_GAEB_Import() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Accept the Error and Continue&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Accept the Error and Continue&quot;)
+public void accept_the_Error_and_Continue() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Marked Assignment Mode against every GAEB Name and submit&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Marked Assignment Mode against every GAEB Name and submit&quot;)
+public void marked_Assignment_Mode_against_every_GAEB_Name_and_submit() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Go to the particuler BoQ&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Go to the particuler BoQ&quot;)
+public void go_to_the_particuler_BoQ() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the project from Quick Start&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the project from Quick Start&quot;)
+public void open_the_project_from_Quick_Start() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Select all BoQs&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Select all BoQs&quot;)
+public void select_all_BoQs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Delete all BoQs and Confirm the delete operation&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Delete all BoQs and Confirm the delete operation&quot;)
+public void delete_all_BoQs_and_Confirm_the_delete_operation() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Save the changes&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Save the changes&quot;)
+public void save_the_changes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Logout the Application&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Logout the Application&quot;)
+public void logout_the_Application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$2(TestCaseResultObserver.java:26)
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:110)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:21)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2143108725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143108725'><pre>io.cucumber.testng.UndefinedStepException: There were 17 undefined steps
+The step &quot;Selecting the a company and access role&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Selecting the a company and access role&quot;)
+public void selecting_the_a_company_and_access_role() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the Project Management Module&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the Project Management Module&quot;)
+public void open_the_Project_Management_Module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the BoQ module&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the BoQ module&quot;)
+public void open_the_BoQ_module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Refesh the page to load the projects&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Refesh the page to load the projects&quot;)
+public void refesh_the_page_to_load_the_projects() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Select the Wizard from sidebar&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Select the Wizard from sidebar&quot;)
+public void select_the_Wizard_from_sidebar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Click on Create and Import multiple BoQs&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Click on Create and Import multiple BoQs&quot;)
+public void click_on_Create_and_Import_multiple_BoQs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Choose multiple BoQs form the Computer and Import&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Choose multiple BoQs form the Computer and Import&quot;)
+public void choose_multiple_BoQs_form_the_Computer_and_Import() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Marked Assignment Mode against every GAEB Name and submit&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Marked Assignment Mode against every GAEB Name and submit&quot;)
+public void marked_Assignment_Mode_against_every_GAEB_Name_and_submit() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Confirm the GAEB Import&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Confirm the GAEB Import&quot;)
+public void confirm_the_GAEB_Import() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Accept the Error and Continue&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Accept the Error and Continue&quot;)
+public void accept_the_Error_and_Continue() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Marked Assignment Mode against every GAEB Name and submit&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Marked Assignment Mode against every GAEB Name and submit&quot;)
+public void marked_Assignment_Mode_against_every_GAEB_Name_and_submit() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Go to the particuler BoQ&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Go to the particuler BoQ&quot;)
+public void go_to_the_particuler_BoQ() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Open the project from Quick Start&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Open the project from Quick Start&quot;)
+public void open_the_project_from_Quick_Start() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Select all BoQs&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;Select all BoQs&quot;)
+public void select_all_BoQs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Delete all BoQs and Confirm the delete operation&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Delete all BoQs and Confirm the delete operation&quot;)
+public void delete_all_BoQs_and_Confirm_the_delete_operation() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Save the changes&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Save the changes&quot;)
+public void save_the_changes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Logout the Application&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Logout the Application&quot;)
+public void logout_the_Application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$2(TestCaseResultObserver.java:26)
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:110)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:21)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>_5DInstitut.Runner.TestRunner@6e0f5f7f</td></tr>
+</table><p>
+</body>
+</html>
